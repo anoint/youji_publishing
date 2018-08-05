@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .modal_close{
+                width: 480px;
+                height:360px;
+                text-align:right;   
+                /* background: rgb(62,100,157);  */
+        }   
+         .modal{
+                width:479px;
+                height:317px;
+                border-radius: 5px;
+         }
+         .title{
+                width:479px;
+                height:167px;
+                background: rgb(62,197,157);
+                text-align:center;
+                
+         }
+         .content{
+                width:479px;
+                height: 150px; 
+                text-align:center;
+                background: white;
+                padding-top : 1em;
+         }
+         .close{
+                background: rgb(224, 116, 122);
+                border: 0px none;
+                border-radius: 20px;
+                color:white;
+                width:101px;
+                height:35px; 
+                vertical-align: top;
+         }
+         #popupLayer { 
+                position:absolute; 
+                left:50%; 
+                top:50%; 
+                margin-left:-240px; 
+                margin-top:-180px;  
+        } 
+    </style>
+</head>
+<body style="background: cadetblue;">
+    <div class="modal_close" id="popupLayer"> 
+        <i class="material-icons"  style="color:white;">
+                highlight_off
+        </i>
+        <span class="modal">
+            <div class="title">
+                <i class="material-icons" style="width:300px;color:white;font-size:100px;margin-top:40px;">
+                        check_circle_outline
+            </i>
+            </div>
+            <div class="content" >
+                   <h3 style="-webkit-margin-before: 0em;-webkit-margin-after: 0.5em;"> Graet!</h3>
+                   <h4 style="-webkit-margin-before: 0em;"> Your invetition successfully send.</h4>
+                    <button class="close">
+                        <i class="material-icons" style="color:white;font-size:15px">
+                                close
+                        </i> Close
+                    </button>
+            </div> 
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .modal{
+            width: 669px;
+            height: 356px; 
+            border-radius: 3px;
+            background: rgb(244,248,249);
+        }
+        .title{
+            padding-left: 50px;
+            padding-top: 40px; 
+            font: 24px sans-serif;
+            color : rgb(83,88,91);
+        }
+        .delete{
+            width: 140px;
+            height: 40px;
+            background: rgb(241,232,227);
+            font: 16px  sans-serif;
+            color: red;
+            text-align :center;
+            border: 0px;
+            border-radius: 2px;
+        } 
+        .table{
+            /* padding-left: 50px; */
+            /* padding-top: 20px; */
+            border-collapse: collapse;
+            margin-left:40px;
+            margin-top:20px;
+        }
+        .tr_title{
+            margin-left:40px;
+            font-size: 11px;
+            height: 40px;
+        }
+        .tr_content{
+            font-size: 14px;
+            background: white;
+            width: 200px;
+            height : 60px;  
+        }
+        .td_name{
+            width: 250px;
+            padding-left:20px;
+        }
+        .td_duration {
+            width: 90px;
+        }
+        .cancel{
+            width: 140px;
+            border: 0px;
+            background-color:  rgb(244,248,249);
+        }
+        .bottom{
+            text-align:right;
+            padding-right:50px;
+            padding-top:50px;
+        }
+        .td_date_content{
+            padding-right: 90px;
+        }
+        .td_name_content{
+            padding-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <h3 class="title">Are you sure you want to delete this recoding?</h3>
+        <table class="table">
+            <tr class="tr_title">
+                <td class="td_name">NAME</td>
+                <td class="td_duration">DURATION</td>
+                <td class="td_date">DATE</td>
+            </tr>
+            <tr class="tr_content">
+                    <td class="td_name_content">Conference Podcast #321</td>
+                    <td class="td_duration_content">00:03:21</td>
+                    <td class="td_date_content">24 Jun 2016 09:30pm</td>
+            </tr>
+        </table>
+       <div class="bottom"> <button class="cancel">Cancel</button><button class="delete">Delete</button></div>
+    </div>
+</body>
+</html>

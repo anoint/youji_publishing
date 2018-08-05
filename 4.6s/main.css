@@ -1,0 +1,76 @@
+.mobile
+{
+    width: 564px;
+    height:1001px;
+    background-color: rgb(55, 52, 71); 
+}
+.kombini
+{
+    margin-left: 108px; 
+} 
+.border
+{
+    border-bottom: 1px solid rgb(99,96,114);
+    width:385px;
+    height:1px; 
+}
+.gaide
+{
+    padding-left: 72px; 
+    padding-top:205px;
+    width:455px;
+    height:596px;
+} 
+.login
+{   
+    background-color: rgb(49, 46, 63);
+    width:391px;
+    height:70px;
+    color: rgb(211,208,229);
+    border: 0px;
+    font-size: 18px;
+    box-shadow: 4px 4px 1px 0.5px black;
+}
+.pwdfind{
+    margin-left:104px;
+    color: rgb(100,96,119);
+}   
+.create{
+    margin-left:104px;
+    margin-top:454px;
+    color: rgb(100,96,119);
+}
+.pwd{
+    background-color: rgb(55, 52, 71); 
+    border: 0px;
+    color: rgb(211,208,229);
+    text-align: center;
+    width: 360px;
+    font-size: 30px;
+    vertical-align: top;
+}
+.email{
+    color: rgb(211,208,229); 
+    background-color: rgb(55, 52, 71); 
+    text-align: center;
+    border: 0px;
+    width: 360px;
+    font-size: 18px;   
+    padding-bottom:5px;
+    vertical-align: top;
+}
+.forget
+{
+    padding-left: 150px; 
+    padding-top:135px; 
+    height:270px; 
+    color: rgb(100,96,119);
+}
+.email_box{ 
+    margin-top:111px;
+    height:60px;
+}
+.pw_box{ 
+    height:90px;
+    vertical-align: top;
+}
