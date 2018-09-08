@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Document</title>
+    <style> 
+        *{
+            margin:0; 
+            padding:0;
+        }
+        html,body
+        {
+            width:100%; 
+            height: 100%; 
+            min-width:100%; 
+            min-height: 100%;
+            max-width:100%; 
+            max-height: 100%;
+        }
+        body
+        { 
+            font-family: 'Open Sans', sans-serif; 
+            font-size:20px;
+        }
+        .wrapper
+        {
+            box-sizing:border-box;
+            width:100%; 
+            height: 100%; 
+            max-width:100%; 
+            max-height: 100%;
+            min-width:1080px; 
+            min-height: 800px; 
+            padding:126px 136px; 
+            background: url('bg.png') no-repeat; 
+            background-position: right 51.4% ;
+        }
+        .btn-close
+        {
+            position:absolute; 
+            right: 68px; 
+            top:46px; 
+            background-color: transparent; 
+            border:0px;
+        }
+        h1
+        {
+            color:rgb(45,85,144); 
+            font-size:55px; 
+            font-weight: 100;
+        }
+        .contents
+        {   
+            margin-top:100px;
+            margin-bottom: 100px; 
+            width:510px;
+        }
+        p{ 
+            color:rgb(211,211,211);
+        }
+        strong
+        {
+            color:rgb(192, 192, 192)
+        }
+        .field
+        {
+            vertical-align: middle;
+            padding:8px 0;
+        }
+        input
+        { 
+            background:rgb(243,243,243); 
+            color:rgb(211,211,211);
+            width:353px;
+            height:52px; 
+            border-radius: 10px; 
+            font-size:20px;
+            border:0px;
+            padding-left:34px;
+            box-sizing: border-box;
+        }
+        .btn-area
+        {
+            margin-top:30px;
+        }
+        .signup{
+            background-color:rgb(45,85,144); 
+            color:rgb(211,211,211);
+            width:353px;
+            height:52px; 
+            border-radius: 10px;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <button class="btn-close">
+            <i class="material-icons" style="font-size:70px;">
+                close
+                </i>
+        </button>
+        <div class="signup-wrapper">
+            <header><h1>Sign Up</h1></header>
+            <div class="contents">
+                <p>Please sign up with your-real name.</p>
+                <p>Once you entered it. you will not able to change it later
+                <strong>A password will be send to your email, so please make sure it is correct.</strong></p> 
+            </div>
+            <div class="field">
+                <input type="text" class="name" value="Enter your name">
+            </div>
+            <div class="field">
+                <input type="text" class="email" value="Enter your email">
+            </div>
+            <div class="btn-area">
+                <button class="signup">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

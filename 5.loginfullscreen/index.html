@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0; font-family: 'Work Sans', sans-serif; color:rgb(120,120,120);  box-sizing: border-box;} 
+        body{width: 100%;} 
+        .wrapper{min-width: 1280px; width: 100%;}
+        .flex{display: flex;width: 100%; align-items: center; background-color: rgb(4,167,119);} 
+        .leftContainer{flex:3;min-height: 966px;background-color: rgb(21,23,34);position: relative;padding: 111px; box-sizing: border-box;} 
+        .rightContainer{flex:2;background-color: rgb(4,167,119); padding: 111px; box-sizing: border-box;}
+        .welcome{ width:100%; margin-top:160px;}
+        .login{width:100%;}
+        .footer{position:absolute; bottom:100px; left:0%;margin-left: 100px; vertical-align: middle;}
+        .id{border:0; border-bottom: 1px solid #fff; padding: 10px 0; background-color:transparent; width: 100%;   }
+        .pw{border:0; border-bottom: 1px solid #fff; padding: 10px 0; background-color:transparent;    margin-bottom: 35px; width: 100%;} 
+        .loginBtn{padding: 10px 30px; border:0px; color:rgb(4,167,119); margin-right:20px; }
+        .register{padding: 10px 30px; border:0px; background-color:rgb(4,167,119);}
+        .h1{font-size: 60px; font-weight: 100;}
+        .h2,.h3{font-weight: 100;}
+        .h2,.h3,.d1,.id,.loginBton{margin-bottom: 35px;} 
+        .s2,.s3,.s4{margin-right:35px;}
+        .s1{margin-right:85px;}
+        .h1,.register,.h3{color:#fff; }
+        ::placeholder,.forgot{color:rgb(147,218,196);}  
+        .loginBtn,.register{border-radius: 2px;}
+        .forgot{text-decoration: none;}
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+       <div class="flex">
+    <div class="leftContainer">
+        <img src="logo.PNG" class="logo">
+        <div class="welcome">
+            <h1 class="h1">Welcome</h1>
+            <h1 class="h2">Register for an ERC account here.</h1>
+            <div class="d1"><p>Register for a ERC account here and get access to the webshop,academy
+            and MyERC remembership </p><p>portal. Tempor indcclassclassunt ut labore et dolere magna aliqua. Ut erim ad minim veniam, quis nostrud</p><p> exerciation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+            <p>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat</p>
+            <p>cupclassatat non proclassent, sunt in culpa qui.</p>
+            </div>
+            <button class="register">REGISTER HERE</button> 
+        </div>
+        <div class="footer"> 
+            <span class="s1">CHOOSE LANGUAGE
+                <i class="material-icons" style="position: absolute; left: 160px; top:-2px;">
+                keyboard_arrow_down
+                </i>
+            </span>
+            <span class="s2">HELP CENTER</span>
+            <span class="s3">ERC WEBSITE</span>
+            <span class="s4">ERC WEBSHOP</span>
+        </div>
+    </div>
+    <div class="rightContainer">
+       <div class="login">
+        <h1 class="h3">Or login to you account</h1>
+        <div><input type="text" value="" placeholder="Your email" class="id"></div>
+        <div><input type="text" value="" placeholder="Password" class="pw"></div>
+        <button class="loginBtn">LOGIN</button>
+        <a href="#" class="forgot">Forgot password?</a>
+        </div>
+    </div>
+       </div>
+    </div>
+</body>
+</html>
