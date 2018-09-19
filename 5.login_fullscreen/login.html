@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+       html { background: url("login_bg_green.jpg") no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+        .size{ width: 479px; height:108px; margin: 0 auto;/* background-color:aquamarine;*/ position: absolute; top: 41%;
+    left: 50%; transform:translate(-50%,-50%)}
+        .title {width: 479px; height:41px; margin: auto; color:white; /*background-color:antiquewhite; */text-align:center;}
+        .login {width: 479px; height:52px; /*background-color:aliceblue;*/}
+        .option {width: 479px; height:16px; margin: auto; /*background-color:azure*/}
+        .footer  { width: 1024px; height:33px;/*background-color:azure;*/position:fixed; bottom:0px; text-align:center;}
+        .profile{ width: 35px; height: 35px; border: 2px solid white; border-radius: 50%; text-align: left;margin-right:8px;}
+        .loginbtn { width: 43px; height: 39px; }
+        .loginbtn:hover { cursor: pointer;}
+        .id{ background-color: #fff; background: url("outline_check_circle_outline_black_18dp.png") no-repeat 160px 8px, #fff;  padding-left:10px; border-radius: 3px; border: 0px; width:172px; height: 28px;margin-right:10px; background-size: 13px; font-size:11px; color:rgb(99,102,107); }
+        .material-icons { color:rgb(82,87,93); top: -10;}
+        .pwd{ background-color: #fff; background: url("outline_highlight_off_black_18dp.png") no-repeat 160px 8px, #fff;  padding-left:10px; border-radius: 3px; border: 0px; width:172px; height: 28px;background-size: 13px; font-size:10px;  color:rgb(99,102,107); }
+        .pwdSave{color:#fff;font-size:10px;}
+        .join{color:#fff; text-decoration: underline;margin-left:30px;font-size:9px;}
+        .option{margin-left:50px;} 
+        .footerMsg{color:rgb(108,176,168);  font-size:9px;margin-right:120px; }
+        .pwdSaveChk{ border-color:#fff;}
+        .footer{ padding-bottom: 20px;}
+        #share{color:rgb(108,176,168); margin: auto;}
+        .share_one{ margin-right: 20px;}
+        input[id="cb2"] + label {
+            border-radius: 2px; 
+            border : 1px  solid #fff;
+            cursor: pointer;
+            width: 6px;
+            height: 6px;
+            display: inline-block;
+            margin-top: 12px;
+        }
+         input[id="cb2"] {
+        display: none;
+      }
+    </style>
+</head>
+<body>  
+    <div class="size">
+        <div class="title"><h2>squoreteam</h2></div> 
+        <div class="login">
+            <table>
+                <tr>
+                    <td width="56px">
+                     <image class="profile" src="profile.png"/> 
+                    </td>
+                     <td width="183px"> 
+                        <input type="text" value="user@gmail.com" class="id" > 
+                     </td>
+                     <td width="193px">
+                         <input type="password" value="111111111" class="pwd">
+                    </td>
+                    <td width="43px"> 
+                        <img src="loginbtn.png" class="loginbtn"> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="option"> 
+            <input type="checkbox" id="cb2"> <label for="cb2"></label>
+            <span class="pwdSave">Se souvenir do mol</span>
+            <span  class="join">Mot de pesse outvil ?</span>
+        </div>
+    </div>
+    <div class="footer"><span class="footerMsg">2013 Squantoarm. Inc.</span>
+        <span id="share">
+            <span class="share_one"><i class="fab fa-facebook-f"></i></span> 
+            <span class="share_one"><i class="fab fa-twitter"  ></i> </span>
+            <span class="share_one"><i class="fab fa-google-plus-square"></i></span>
+        </span>
+    </div>
+</body>
+</html>

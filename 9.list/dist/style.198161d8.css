@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: '나눔바른고딕';
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.app-wrapper > header {
+  padding: 40px 64px;
+  height: 63px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 27px 0 24px 0;
+}
+li a {
+  text-decoration: none;
+}
+.left-menu-wrapper,
+.right-menu-wrapper {
+  display: inline;
+}
+.left-menu-wrapper ul,
+.right-menu-wrapper ul {
+  display: inline;
+}
+.left-menu-wrapper ul li,
+.right-menu-wrapper ul li {
+  display: inline-block;
+}
+.left-menu-wrapper ul li a,
+.right-menu-wrapper ul li a {
+  color: #6ed3d8;
+}
+.left-menu-wrapper ul li a.active,
+.right-menu-wrapper ul li a.active,
+.left-menu-wrapper ul li a:hover,
+.right-menu-wrapper ul li a:hover {
+  color: #547b7e;
+}
+.left-menu-wrapper ul li {
+  border-right: 2px solid #e5e5e5;
+  float: left;
+  padding: 0 30px;
+}
+.left-menu-wrapper ul li:last-child {
+  border-right: 0px;
+}
+.right-menu-wrapper {
+  float: right;
+}
+.right-menu-wrapper ul li {
+  padding: 0 17px;
+}
+.logo-wrapper {
+  display: inline-block;
+  float: left;
+}
+.logo-wrapper img {
+  width: 177px;
+  height: 70px;
+}
+.fillter {
+  background-color: #eff6f6;
+  border-top: 1px solid #d5e7e8;
+  height: 342px;
+  padding: 0 80px 0 200px;
+}
+h1 {
+  font-size: 50px;
+  color: #588386;
+  font-weight: 500;
+  padding-left: 43px;
+  padding-top: 118px;
+  padding-bottom: 21px;
+}
+.fillter ul li button {
+  font-size: 22px;
+  color: #588386;
+  border: 0;
+  background-color: transparent;
+  padding: 58px 25px;
+}
+.fillter ul li button:hover {
+  border-bottom: 5px solid #6ed3d8;
+}
+input {
+  float: right;
+  border: 1px solid #b0c6c7;
+  background-color: transparent;
+  padding: 20px 100px 20px 30px;
+  border-radius: 50px;
+  font-size: 22px;
+  margin-top: 50px;
+  text-align: center;
+  color: #b0c6c7;
+  font-size: 15px;
+  width: 200px;
+}
+.fillter ul {
+  display: inline;
+}
+.fillter ul li {
+  display: inline;
+}
+.selected {
+  border-bottom: 4px solid #6ed3d8;
+}
+li button {
+  border: 0;
+}
+li button span {
+  border-radius: 50%;
+  padding: 10px 15px;
+  width: 20px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.span1 {
+  border: 2px solid #b0c6c7;
+}
+.span2 {
+  border: 2px solid #7ad40f;
+}
+.span3 {
+  border: 2px solid #d0d3d3;
+}
+.span4 {
+  border: 2px solid #f4e49a;
+}
+.span5 {
+  border: 2px solid #fe6363;
+}
+.search i {
+  position: absolute;
+  top: 5px;
+  left: 490px;
+  transform: rotate(90deg);
+  color: #b0c6c7;
+}
+.search {
+  position: relative;
+  display: inline;
+  width: 421px;
+  height: 26px;
+}
+.space {
+  display: inline;
+}
+.grid {
+  margin: 100px 150px;
+  text-align: center;
+}
+.grid table tr td {
+  padding: 20px;
+  border: 1px solid gray;
+}
+.status {
+  border-radius: 50%;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+.st1 {
+  background-color: #8fdc33;
+}
+.st2 {
+  background-color: #ff7373;
+}
+.st3 {
+  background-color: #d8d8d8;
+}
+.st4 {
+  background-color: #fbd239;
+}
+.btn-wrapper {
+  margin: 20px 80px;
+  float: right;
+}
+.sel-wrapper {
+  position: relative;
+}
+.sel-wrapper i {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 20px;
+}
+.sel-all {
+  width: 160px;
+  border: 1px solid #e1e4e3;
+  padding: 15px;
+  display: inline-block;
+  -webkit-appearance: none;
+  /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;
+  /* 화살표 없애기 for firefox*/
+  appearance: none;
+  /* 화살표 없애기 공통*/
+}
+.Campaign-wrapper {
+  position: relative;
+}
+.Campaign-wrapper i {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  font-size: 20px;
+}
+.btn-sch-wrapper {
+  position: relative;
+}
+.btn-sch-wrapper i {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+}
+.btn-sch {
+  width: 160px;
+  border: 0;
+  background-color: #eff6f6;
+  padding: 10px;
+  display: inline-block;
+  -webkit-appearance: none;
+  /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;
+  /* 화살표 없애기 for firefox*/
+  appearance: none;
+  /* 화살표 없애기 공통*/
+}
+select::-ms-expand {
+  display: none;
+  /* 화살표 없애기 for IE10, 11*/
+}
+.btn-new {
+  border: 0;
+  font-size: 14px;
+  padding: 18px 25px;
+  background-color: #6ed3d8;
+  margin-left: 50px;
+  color: #fff;
+}
+.btn-wrapper div {
+  display: inline;
+}
+.edit-wrapper button {
+  background-color: transparent;
+  width: 20px;
+  border: 0;
+  outline: none;
+}
+.edit-wrapper button i {
+  color: #d7dada;
+  font-size: 20px;
+  width: 20px;
+}
+.edit-wrapper button i.active,
+.edit-wrapper button i:hover {
+  color: #2b393a;
+}
+.chk {
+  width: 20px;
+  margin: 0;
+  float: none;
+}
+.show-more {
+  text-align: center;
+}
+.show-more p {
+  color: #a9dddf;
+}
+.td-left {
+  text-align: left;
+}
+.check-wrap {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 40px;
+}
+.check-wrap .label-wrap {
+  position: relative;
+  line-height: 40px;
+}
+.check-wrap .label-wrap label {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  box-sizing: border-box;
+  user-select: none;
+  z-index: 2;
+}
+.check-wrap .label-wrap label.to-off {
+  padding-left: 6px;
+  text-align: left;
+}
+.check-wrap .label-wrap label.to-on {
+  padding-right: 6px;
+  text-align: right;
+}
+.check-wrap .label-wrap:after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  content: '';
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.check-wrap input[type="checkbox"] {
+  display: none;
+}
+.check-wrap input[type="checkbox"] + .label-wrap .to-off {
+  display: none;
+}
+.check-wrap input[type="checkbox"]:checked + .label-wrap .to-on {
+  display: none;
+}
+.check-wrap input[type="checkbox"]:checked + .label-wrap .to-off {
+  display: inline-block;
+}
+.check-wrap input[type="checkbox"]:checked + .label-wrap:after {
+  transform: translateX(40);
+}

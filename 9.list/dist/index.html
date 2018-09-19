@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style.198161d8.css">
+<script src="/style.198161d8.js"></script></head>
+<body>
+   <div class="app-wrapper">
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <img src="/logo.115e834c.png">
+            </div>
+            <div class="left-menu-wrapper">
+                <ul>
+                    <li><a href="#">COMPAIGNS</a></li>
+                    <li><a href="#">ANALYTUCS</a></li>
+                    <li><a href="#">DATA GRID</a></li>
+                    <li><a href="#">CONTACT HISTORY</a></li>
+                    <li><a href="#">KNOWLEDGE BASE</a></li>
+                </ul>
+            </div>
+            <div class="right-menu-wrapper">
+                <ul>
+                    <li><a href="#">Hi Ewellnal</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <div class="contents">
+        <div class="fillter">
+            <h1>Campaign Overview</h1>
+            <ul>
+                <li><button class="selected">All
+                        <span class="span1">12</span>
+                    </button>
+                </li>
+                <li><button>Live
+                        <span class="span2">2</span>
+                    </button>
+                </li>
+                <li><button>Inactive
+                        <span class="span3">3</span>
+                    </button>
+                </li>
+                <li><button>Drafts
+                        <span class="span4">103</span>
+                    </button>
+                </li>
+                <li><button>Error
+                        <span class="span5">2</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="space"></div>
+            <div class="search">
+                <input type="text" placeholder="Search Campains">
+                <i class="material-icons">
+                    search
+                </i>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <div class="sel-wrapper">
+               <select class="sel-all">
+                    <option>All Countries</option>
+                </select>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div><button class="btn-new">+ CREATE NEW</button></div>
+        </div>
+        <div class="grid">
+            <table>
+               <colgroup>
+                   <col width="2%">
+                   <col width="28%">
+                   <col width="20%">
+                   <col width="10%">
+                   <col width="10%">
+                   <col width="10%">
+                   <col width="5%">
+                   <col width="5%">
+                   <col width="5%">                   
+               </colgroup>
+                <tr>
+                    <td>Status</td>
+                    <td class="td-left"><div class="Campaign-wrapper">
+                         Campaign
+                        <i class="fas fa-angle-down"></i>
+                        </div>
+                    </td>
+                    <td class="td-left">Segment</td>
+                    <td class="td-left">Channel</td>
+                    <td class="td-left">
+                        <div class="btn-sch-wrapper">
+                           <button class="btn-sch">
+                                Scheduled At
+                            </button>
+                            <i class="fas fa-angle-up"></i>
+                        </div> 
+                    </td>
+                    <td class="td-left">Last Run</td>
+                    <td class="td-left">Country</td>
+                    <td>Edit</td>
+                    <td>Action</td>
+                </tr>
+                <tr>
+                    <td><span class="status st1"></span></td>
+                    <td class="td-left">Abandoned Cart Reminder 24</td>
+                    <td class="td-left">Sale Cart</td>
+                    <td class="td-left">Push</td>
+                    <td class="td-left">19:00 Every Day</td>
+                    <td class="td-left">19:00</td>
+                    <td class="td-left">DE</td>
+                    <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
+                    <td>
+                        <div class="check-wrap">
+                            <input type="checkbox" id="check1">
+                               <div class="label-wrap">
+                                    <label class="to-on" for="check1">OFF</label>                            
+                                    <label class="to-off" for="check1">ON</label>
+                                    <div class="after"></div>
+                                </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="status st1"></span></td>
+                    <td class="td-left">Abandoned Cart Lux</td>
+                    <td class="td-left">Luxery Cart</td>
+                    <td class="td-left">Email</td>
+                    <td class="td-left">Every 1 Hour</td>
+                    <td class="td-left">18:45</td>
+                    <td class="td-left">DE</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="status st2"></span></td>
+                    <td class="td-left">Abandoned Cart Sale</td>
+                    <td class="td-left">Sale Cart</td>
+                    <td class="td-left">Email</td>
+                    <td class="td-left">Every 3 Hours</td>
+                    <td class="td-left">18:00</td>
+                    <td class="td-left">PL</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="status st3"></span></td>
+                    <td class="td-left">Surf History Cat</td>
+                    <td class="td-left">Category</td>
+                    <td class="td-left">Email</td>
+                    <td class="td-left">15:16 Every Day</td>
+                    <td class="td-left">15:16</td>
+                    <td class="td-left">UK</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="status st1"></span></td>
+                    <td class="td-left">Surf History Double</td>
+                    <td class="td-left">Double Visit</td>
+                    <td class="td-left">Email</td>
+                    <td class="td-left">Every 30 Min</td>
+                    <td class="td-left">15:16</td>
+                    <td class="td-left">UK</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="status st2"></span></td>
+                    <td class="td-left">Payment Reminder</td>
+                    <td class="td-left">All</td>
+                    <td class="td-left">SMS</td>
+                    <td class="td-left">13:00 Mondays</td>
+                    <td class="td-left">13:00</td>
+                    <td class="td-left">UK</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="status st1"></span></td>
+                    <td class="td-left">Activiation</td>
+                    <td class="td-left">Non Registered</td>
+                    <td class="td-left">Push</td>
+                    <td class="td-left">12:30 Every Day</td>
+                    <td class="td-left">12:30</td>
+                    <td class="td-left">AU</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="show-more"><p>SHOW MORE</p></div>
+    </div>
+    </div>
+</body>
+</html>
