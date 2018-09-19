@@ -7,5 +7,5 @@ package-lock.json
 /**/node_modules
 /**/dist
 /**/.gulp-scss-cache
-/**package-lock.json
+/**/package-lock.json
 /**/.cache
