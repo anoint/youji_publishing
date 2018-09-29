@@ -9,6 +9,37 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="style.less">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/js/jquery.tablesorter.min.js"></script> 
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+            $("#myTable").tablesorter();
+            $(".btn-Campaign, .btn-sch").click(function()
+            {
+                $(this).parents("th").trigger("click"); 
+            }); 
+            $(".fillter .search-wrap ul li button").click(function()
+            {
+                $(".fillter .search-wrap ul li button").removeClass("selected");
+                $(this).addClass("selected");
+            }); 
+            $(".grid .tablesorter tbody tr td .edit-wrapper button i").click(function()
+            {
+                $(".grid .tablesorter tbody tr td .edit-wrapper button i").removeClass("edit-selected");
+                $(this).addClass("edit-selected");
+            }); 
+            $(".left-menu-wrapper ul li a").click(function()
+            {
+                $(".left-menu-wrapper ul li a").removeClass("active");
+                $(this).addClass("active");
+            });
+            $(".right-menu-wrapper ul li a").click(function()
+            {
+                $(".right-menu-wrapper ul li a").removeClass("right-active");
+                $(this).addClass("right-active");
+            });
+        }); 
+    </script>
 </head>
 <body>
    <div class="app-wrapper">
@@ -28,7 +59,7 @@
             </div>
             <div class="right-menu-wrapper">
                 <ul>
-                    <li><a href="#">Hi Ewellnal</a></li>
+                    <li><a href="#"class="right-active">Hi Ewellnal</a></li>
                     <li><a href="#">Account</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Help</a></li>
@@ -39,34 +70,36 @@
     <div class="contents">
         <div class="fillter">
             <h1>Campaign Overview</h1>
-            <ul>
-                <li><button  class="selected">All
-                        <span class="span1">12</span>
-                    </button>
-                </li>
-                <li><button>Live
-                        <span class="span2">2</span>
-                    </button>
-                </li>
-                <li><button>Inactive
-                        <span class="span3">3</span>
-                    </button>
-                </li>
-                <li><button>Drafts
-                        <span class="span4">103</span>
-                    </button>
-                </li>
-                <li><button>Error
-                        <span class="span5">2</span>
-                    </button>
-                </li>
-            </ul>
-            <div class="space"></div>
-            <div class="search">
-                <input type="text" placeholder="Search Campains">
-                <i class="material-icons">
-                    search
-                </i>
+            <div class="search-wrap">
+                <ul>
+                    <li><button  class="selected">All
+                            <span class="span1">12</span>
+                        </button>
+                    </li>
+                    <li><button>Live
+                            <span class="span2">2</span>
+                        </button>
+                    </li>
+                    <li><button>Inactive
+                            <span class="span3">3</span>
+                        </button>
+                    </li>
+                    <li><button>Drafts
+                            <span class="span4">103</span>
+                        </button>
+                    </li>
+                    <li><button>Error
+                            <span class="span5">2</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="space"></div>
+                <div class="search">
+                    <input type="text" placeholder="Search Campains">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </div>
             </div>
         </div>
         <div class="btn-wrapper">
@@ -79,43 +112,45 @@
             <div><button class="btn-new">+ CREATE NEW</button></div>
         </div>
         <div class="grid">
-            <table>
+            <table id="myTable" class="tablesorter">
                <colgroup>
                    <col width="2%">
                    <col width="28%">
-                   <col width="20%">
+                   <col width="15%">
                    <col width="10%">
-                   <col width="10%">
+                   <col width="15%">
                    <col width="10%">
                    <col width="5%">
-                   <col width="5%">
+                   <col width="10%">
                    <col width="5%">                   
                </colgroup>
                 <thead>
                   <tr>
-                    <td>Status</td>
-                    <td class="td-left">
+                    <th>Status</th>
+                    <th class="td-left">
                         <div class="Campaign-wrapper">
                             <button class="btn-Campaign">
                                 Campaign
                             </button>
                         <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up"></i>
                         </div>
-                    </td>
-                    <td class="td-left">Segment</td>
-                    <td class="td-left">Channel</td>
-                    <td class="td-left">
+                    </th>
+                    <th class="td-left">Segment</th>
+                    <th class="td-left">Channel</th>
+                    <th class="td-left">
                         <div class="sch-wrapper">
                            <button class="btn-sch">
                                 Scheduled At
                             </button>
                             <i class="fas fa-angle-up"></i>
+                            <i class="fas fa-angle-down"></i>
                         </div> 
-                    </td>
-                    <td class="td-left">Last Run</td>
-                    <td class="td-left">Country</td>
-                    <td>Edit</td>
-                    <td>Action</td>
+                    </th>
+                    <th class="td-left">Last Run</th>
+                    <th class="td-left">Country</th>
+                    <th>Edit</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -150,10 +185,10 @@
                    <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
                     <td>
                         <div class="check-wrap" >
-                            <input type="checkbox" id="check1">
+                            <input type="checkbox" id="check2">
                                <div class="label-wrap">
-                                    <label class="to-on" for="check1">OFF</label>                            
-                                    <label class="to-off" for="check1">ON</label>
+                                    <label class="to-on" for="check2">OFF</label>                            
+                                    <label class="to-off" for="check2">ON</label>
                                     <div class="after"></div>
                                 </div>
                         </div>
@@ -170,10 +205,10 @@
                    <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
                     <td>
                         <div class="check-wrap" >
-                            <input type="checkbox" id="check1">
+                            <input type="checkbox" id="check3">
                                <div class="label-wrap">
-                                    <label class="to-on" for="check1">OFF</label>                            
-                                    <label class="to-off" for="check1">ON</label>
+                                    <label class="to-on" for="check3">OFF</label>                            
+                                    <label class="to-off" for="check3">ON</label>
                                     <div class="after"></div>
                                 </div>
                         </div>
@@ -190,10 +225,10 @@
                    <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
                     <td>
                         <div class="check-wrap" >
-                            <input type="checkbox" id="check1">
+                            <input type="checkbox" id="check4">
                                <div class="label-wrap">
-                                    <label class="to-on" for="check1">OFF</label>                            
-                                    <label class="to-off" for="check1">ON</label>
+                                    <label class="to-on" for="check4">OFF</label>                            
+                                    <label class="to-off" for="check4">ON</label>
                                     <div class="after"></div>
                                 </div>
                         </div>
@@ -210,10 +245,10 @@
                    <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
                     <td>
                         <div class="check-wrap" >
-                            <input type="checkbox" id="check1" checked>
+                            <input type="checkbox" id="check5" checked>
                                <div class="label-wrap">
-                                    <label class="to-on" for="check1">OFF</label>                            
-                                    <label class="to-off" for="check1">ON</label>
+                                    <label class="to-on" for="check5">OFF</label>                            
+                                    <label class="to-off" for="check5">ON</label>
                                     <div class="after"></div>
                                 </div>
                         </div>
@@ -230,10 +265,10 @@
                    <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
                     <td>
                         <div class="check-wrap" >
-                            <input type="checkbox" id="check1">
+                            <input type="checkbox" id="check6">
                                <div class="label-wrap">
-                                    <label class="to-on" for="check1">OFF</label>                            
-                                    <label class="to-off" for="check1">ON</label>
+                                    <label class="to-on" for="check6">OFF</label>                            
+                                    <label class="to-off" for="check6">ON</label>
                                     <div class="after"></div>
                                 </div>
                         </div>
@@ -250,10 +285,10 @@
                    <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
                     <td>
                         <div class="check-wrap" >
-                            <input type="checkbox" id="check1">
+                            <input type="checkbox" id="check7">
                                <div class="label-wrap">
-                                    <label class="to-on" for="check1">OFF</label>                            
-                                    <label class="to-off" for="check1">ON</label>
+                                    <label class="to-on" for="check7">OFF</label>                            
+                                    <label class="to-off" for="check7">ON</label>
                                     <div class="after"></div>
                                 </div>
                         </div>
@@ -263,6 +298,10 @@
             </table>
         </div>
         <div class="show-more"><p>SHOW MORE</p></div>
+        <div class="contact-us-wrap">
+            <button type="button" class="btn-contact-us">CONTACT US</button>
+            <div class="contact-us-content"></div>
+        </div>
     </div>
     </div>
 </body>
