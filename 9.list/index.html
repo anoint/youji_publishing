@@ -19,7 +19,7 @@
             </div>
             <div class="left-menu-wrapper">
                 <ul>
-                    <li><a href="#">COMPAIGNS</a></li>
+                    <li><a href="#" class="active">COMPAIGNS</a></li>
                     <li><a href="#">ANALYTUCS</a></li>
                     <li><a href="#">DATA GRID</a></li>
                     <li><a href="#">CONTACT HISTORY</a></li>
@@ -91,17 +91,21 @@
                    <col width="5%">
                    <col width="5%">                   
                </colgroup>
-                <tr>
+                <thead>
+                  <tr>
                     <td>Status</td>
-                    <td class="td-left"><div class="Campaign-wrapper">
-                         Campaign
+                    <td class="td-left">
+                        <div class="Campaign-wrapper">
+                            <button class="btn-Campaign">
+                                Campaign
+                            </button>
                         <i class="fas fa-angle-down"></i>
                         </div>
                     </td>
                     <td class="td-left">Segment</td>
                     <td class="td-left">Channel</td>
                     <td class="td-left">
-                        <div class="btn-sch-wrapper">
+                        <div class="sch-wrapper">
                            <button class="btn-sch">
                                 Scheduled At
                             </button>
@@ -112,8 +116,10 @@
                     <td class="td-left">Country</td>
                     <td>Edit</td>
                     <td>Action</td>
-                </tr>
-                <tr>
+                  </tr>
+                </thead>
+                <tbody>
+                 <tr>
                     <td><span class="status st1"></span></td>
                     <td class="td-left">Abandoned Cart Reminder 24</td>
                     <td class="td-left">Sale Cart</td>
@@ -141,8 +147,17 @@
                     <td class="td-left">Every 1 Hour</td>
                     <td class="td-left">18:45</td>
                     <td class="td-left">DE</td>
-                    <td></td>
-                    <td></td>
+                   <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
+                    <td>
+                        <div class="check-wrap" >
+                            <input type="checkbox" id="check1">
+                               <div class="label-wrap">
+                                    <label class="to-on" for="check1">OFF</label>                            
+                                    <label class="to-off" for="check1">ON</label>
+                                    <div class="after"></div>
+                                </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="status st2"></span></td>
@@ -152,8 +167,17 @@
                     <td class="td-left">Every 3 Hours</td>
                     <td class="td-left">18:00</td>
                     <td class="td-left">PL</td>
-                    <td></td>
-                    <td></td>
+                   <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
+                    <td>
+                        <div class="check-wrap" >
+                            <input type="checkbox" id="check1">
+                               <div class="label-wrap">
+                                    <label class="to-on" for="check1">OFF</label>                            
+                                    <label class="to-off" for="check1">ON</label>
+                                    <div class="after"></div>
+                                </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="status st3"></span></td>
@@ -163,8 +187,17 @@
                     <td class="td-left">15:16 Every Day</td>
                     <td class="td-left">15:16</td>
                     <td class="td-left">UK</td>
-                    <td></td>
-                    <td></td>
+                   <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
+                    <td>
+                        <div class="check-wrap" >
+                            <input type="checkbox" id="check1">
+                               <div class="label-wrap">
+                                    <label class="to-on" for="check1">OFF</label>                            
+                                    <label class="to-off" for="check1">ON</label>
+                                    <div class="after"></div>
+                                </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="status st1"></span></td>
@@ -174,8 +207,17 @@
                     <td class="td-left">Every 30 Min</td>
                     <td class="td-left">15:16</td>
                     <td class="td-left">UK</td>
-                    <td></td>
-                    <td></td>
+                   <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
+                    <td>
+                        <div class="check-wrap" >
+                            <input type="checkbox" id="check1" checked>
+                               <div class="label-wrap">
+                                    <label class="to-on" for="check1">OFF</label>                            
+                                    <label class="to-off" for="check1">ON</label>
+                                    <div class="after"></div>
+                                </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="status st2"></span></td>
@@ -185,8 +227,17 @@
                     <td class="td-left">13:00 Mondays</td>
                     <td class="td-left">13:00</td>
                     <td class="td-left">UK</td>
-                    <td></td>
-                    <td></td>
+                   <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
+                    <td>
+                        <div class="check-wrap" >
+                            <input type="checkbox" id="check1">
+                               <div class="label-wrap">
+                                    <label class="to-on" for="check1">OFF</label>                            
+                                    <label class="to-off" for="check1">ON</label>
+                                    <div class="after"></div>
+                                </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="status st1"></span></td>
@@ -196,9 +247,19 @@
                     <td class="td-left">12:30 Every Day</td>
                     <td class="td-left">12:30</td>
                     <td class="td-left">AU</td>
-                    <td></td>
-                    <td></td>
+                   <td><div class="edit-wrapper"><button><i class="material-icons">create_outline</i></button></div></td>
+                    <td>
+                        <div class="check-wrap" >
+                            <input type="checkbox" id="check1">
+                               <div class="label-wrap">
+                                    <label class="to-on" for="check1">OFF</label>                            
+                                    <label class="to-off" for="check1">ON</label>
+                                    <div class="after"></div>
+                                </div>
+                        </div>
+                    </td>
                 </tr>
+            </tbody>
             </table>
         </div>
         <div class="show-more"><p>SHOW MORE</p></div>
